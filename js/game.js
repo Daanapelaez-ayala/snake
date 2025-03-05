@@ -3,10 +3,13 @@ import { update as updateSnake, draw as
 import { update as updateFood, draw as 
         drawFood} from "./food.js";
 let lastRenderTime = 0;
+const SNAKE_SPEED = 2
 const gameBoard = document.getElementById
 ('game-board');
  function main( currentTime) {
-    window.requestAnimationFrame(main);
+    
+   
+    console.log(currentTime)
     const secondsSinceLastSRender = 
     (currentTime- lastRenderTime) / 1000;
 
@@ -16,6 +19,15 @@ const gameBoard = document.getElementById
     lastRenderTime = currentTime;
 
     update();
-    
+    draw()
 
+ }
+ window.requestAnimationFrame(main)
+ function update () {
+updateSnake()
+updateFood()
+ }
+ function draw() {
+drawSnake(gameBoard)
+drawFood(gameBoard)
  }

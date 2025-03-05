@@ -15,3 +15,8 @@ window.addEventListener ('keydown', e => {
             break;
     }
 })
+export function getElementById (){
+    lastInputDirection = inputDirection
+    return inputDirection
+    
+}
