@@ -5,25 +5,30 @@ body {
     justify-content: center;
     align-items: center;
     margin: 0;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(180, 189, 49);
+    background-image: url("images.jpg");
     }
     .snake {
-    background-color: greenyellow;
-    border: .25vmin solid rgb(165, 22, 22);
+    background-color: rgb(241, 255, 47);
+    border: .15vmin solid rgb(15, 104, 221);
+    border-radius:150%
     }
     .food {
-        background-color: red;
-        border: .25vmin solid rgb(167, 46, 46);
-        width: 25px;
-        height: 25px;
-        background: red;
+        background-image: url("apple.jpg");
+         background-color: rgb(255, 255, 255); 
+        border: .25vmin solid rgb(165, 167, 46);
+        width: 20px;
+        height: 20px;
+        /* background: red; */
         border-radius: 50%
     }
     #game-board {
-        background-color: #9fe99f;
+        background-image: url("images.jpg");
+        background-color: #000000;
         width: 100vmin;
         height: 100vmin;
         display: grid;
         grid-template-rows: repeat(21, 1fr);
         grid-template-columns: repeat(21, 1fr);
     }
+    /*  */
